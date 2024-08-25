@@ -40,10 +40,7 @@ public class Task implements Serializable {
 
     @Override
     public String toString() {
-        return "Task{" +
-                "title='" + title + '\'' +
-                ", description='" + description + '\'' +
-                ", isCompleted=" + isCompleted +
-                '}';
+        return String.format("Task{title='%s', description='%s', isCompleted=%b}",
+                title, description, isCompleted);
     }
 }
